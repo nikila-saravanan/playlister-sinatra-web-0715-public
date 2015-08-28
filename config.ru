@@ -6,3 +6,15 @@ end
 
 use Rack::MethodOverride
 run ApplicationController
+
+map "/genres" do
+  run GenresController
+end
+
+map "/songs" do
+  run SongsController
+end
+
+map "/artists" do
+  run ArtistsController
+end
